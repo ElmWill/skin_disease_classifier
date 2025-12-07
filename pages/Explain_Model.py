@@ -26,13 +26,6 @@ if model:
 else:
     st.warning("Model could not be loaded — summary skipped.")
 
-st.subheader("Model Summary")
-# Write the model summary to Streamlit
-stringlist = []
-model.summary(print_fn=lambda x: stringlist.append(x))
-short_model_summary = "\n".join(stringlist)
-st.text(short_model_summary)
-
 st.subheader("What each part does")
 st.write("""
 - **EfficientNetB0 backbone**: pre-trained feature extractor (learned edges, textures, patterns).
