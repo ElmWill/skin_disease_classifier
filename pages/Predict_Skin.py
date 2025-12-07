@@ -19,8 +19,6 @@ CUSTOM_OBJECTS = {
     "RandomRotation": RandomRotation,
     "RandomZoom": RandomZoom,
 }
-st.write(f"Resolved Path: {MODEL_PATH}")
-st.write(f"File Exists: {os.path.exists(MODEL_PATH)}")
 
 CLASS_NAMES = ["nv", "mel", "bcc", "bkl"]
 
