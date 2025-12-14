@@ -18,7 +18,7 @@ except Exception as e:
 
 # Show summary only if model exists
 if model:
-    st.subheader("📌 Model Summary")
+    st.subheader("Model Summary")
     stringlist = []
     model.summary(print_fn=lambda x: stringlist.append(x))
     summary = "\n".join(stringlist)
